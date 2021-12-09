@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,22 @@
     <link rel="stylesheet" href="/css/styles.css">
     <title>Messi otaku</title>
 </head>
+
 <body>
+    <%- include('partials/header.ejs') %>
     <h2>omg messi con la camiseta de chaca :3 </h2>
     <img src="/img/messi chaca.jpg" alt="messi casaca chaca">
     <p>hobbies</p>
-    <% for(let i = 0; i < 10; i++) { %>
+    <% for(let i=0; i < 5; i++) { %>
         <label for="">hobbie <%= i+1 %> </label>
-        <% if(i % 2 == 0) {%> 
-        <input class= "par" type="text" name='hobbies[]'> <br>
-        <% } else { %>
-            <input class= "impar" type="text" name='hobbies[]'> <br>
-            <% } %> 
-    <% } %>
-    
+        <% if(i % 2==0) {%>
+            <input class="par" type="text" name='hobbies[]'> <br>
+            <% } else { %>
+                <input class="impar" type="text" name='hobbies[]'> <br>
+                <% } %>
+                    <% } %>
+
+
 </body>
+
 </html>

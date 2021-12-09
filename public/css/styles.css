@@ -10,6 +10,7 @@ h2{
 img{
     width: 200px;
     height: 200px;
+    border: black 3px solid;
 }
 .par{
     border: blue 1px solid
