@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <h1>Listado de Canciones de Rock</h1>
+        <ul>
+            <% for (let i = 0; i < canciones.length; i++){ %>
+            <li>
+                <a href="/users/canciones/<%=canciones[i].id%>"><%=canciones[i].nombre%></a>
+                
+            </li>
+           <% } %>
+        </ul>
+    </body>
+</html>

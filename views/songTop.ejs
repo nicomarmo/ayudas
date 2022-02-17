@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <h1>Listado de Canciones Top</h1>
+        <ul>
+            <% for (let i = 0; i < canciones.length; i++){ %>
+            <li>
+                <a href="/users/canciones/top/<%=canciones[i].id%>"><%=canciones[i].nombre%></a>    
+            </li>
+           <% } %>
+        </ul>
+    </body>
+</html>

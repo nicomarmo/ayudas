@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <h1>Listado de Canciones</h1>
+        <ul>
+            <% for (let i = 0; i < canciones.length; i++){ %>
+            <li>
+                <a href="/users/canciones/<%=canciones[i].id%>">
+                    <% if (canciones[i].generos) { %>
+                        <%=canciones[i].nombre%> ---- <%=canciones[i].generos.nombre %>
+                    <% } %>
+                </a>
+                
+            </li>
+           <% } %>
+        </ul>
+    </body>
+</html>

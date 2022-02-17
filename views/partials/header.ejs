@@ -1,5 +1,31 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/headerStyles.css">
+    
+</head>
 <header>
-    <li><a href="/">home</a></li>
-    <li><a href="/users">worst players</a></li>
-    <li><a href="/crud">crud</a></li>
+
+    <div class="cabeza">
+
+        
+            <% if (!locals.isLogged) { %>
+                <ul type="none">
+                    <li><a href="/users/register">Register</a></li>
+                    <li><a href="/users/login">Login</a></li>
+                </ul>
+                <% } else {%>
+                    <ul type=none>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/users">Users</a></li>
+                        <li><a href="/users/logout">Log Out</a></li>
+                        <li>hola, <%= user.nombre %> </li>
+                    </ul>
+                <% } %>
+
+
+                    <br>
+                    <br>
+    </div>
 </header>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Cancion</title>
+</head>
+<body>
+        <h1>Editar Canción</h1>
+    <form action="/canciones/editar/<%=canciones.id%>" method="post">
+        <div>
+            <label for="">Titulo</label>
+            <input type="text" name="titulo" value="<%=canciones.nombre%>">
+        </div>
+        <div>
+            <label for="">Compositor</label>
+            <input type="text" name="compositor"value="<%=canciones.compositor%>">
+        </div>
+        <div>
+            <label for="">Genero</label>
+            <select name="generos">
+                <% for (let i = 0; i < generos.length; i++) { %>
+
+                    <% if (generos[i].id == canciones.id_genero) { %>
+
+                        <option value="<%=generos[i].id%>" selected>
+                           
+                            <%=generos[i].nombre%>
+                        </option>
+                        <% }else{ %>
+                            
+                            <option value="<%=generos[i].id%>">
+                            
+                                <%=generos[i].nombre%>
+                            
+                            </option>
+                        <% } %>
+                    <% } %>                
+            </select> 
+        </div>
+        <button type="submit">Editar</button>
+    </form>
+</html>

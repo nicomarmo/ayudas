@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+</head>
+
+<body>
+    <%- include('partials/header.ejs') %>
+        <h1>Lista de Usuarios</h1>
+        <ul>
+            <% for (let i=0; i< usersResults.length ; i++) { %>
+                <li>
+                    <a href="/users/detail/<%= usersResults[i].id%>"><%= usersResults[i].name %>
+                    </a>
+                </li>
+
+                <% } %>
+        </ul>
+        <h2>Search</h2>
+        <form action="/users/search" method="get">
+            <input type="text" name="search">
+            <input type="submit" value="Search">
+        </form>
+</body>
+
+</html>

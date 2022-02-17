@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+
+<body>
+    <%- include('partials/header.ejs') %>
+
+                        <form method="post" action="/users/register" enctype="multipart/form-data">
+                           
+                            <label for="">Nombre</label>
+                            <input
+                            type="text"
+                            name="nombre"
+                            value="<%= locals.oldData ? oldData.nombre : null %>">
+                            <% if (locals.errors && errors.nombre) { %>
+                            <div><%= errors.nombre.msg %> </div>
+                            <% } %>
+                            <br>
+                            
+                            <label for="">Edad</label>
+                            <input
+                            type="text"
+                            name="edad"
+                            value="<%= locals.oldData ? oldData.edad : null %>">
+                            <% if (locals.errors && errors.edad) { %>
+                                <div><%= errors.edad.msg %> </div>
+                               <% } %>
+                            <br>
+                            
+                            <label for="">Email</label>
+                            <input
+                            type="email"
+                            name="email"
+                            value="<%= locals.oldData ? oldData.email : null %>">
+                            <% if (locals.errors && errors.email) { %>
+                                <div><%= errors.email.msg %> </div>
+                               <% } %>
+                            <br>
+                            
+                            <label for="">Contraseña</label>
+                            <input type="password" name="password">
+                            <br>
+
+                            <label for="">Foto de Perfil</label>
+                            <input type="file" name="fotoDePerfil">
+                            <% if (locals.errors && errors.fotoDePerfil) { %>
+                                <div><%= errors.fotoDePerfil.msg %> </div>
+                               <% } %>
+                            <br>
+                            <button type="submit">Registrar</button>
+                        </form>
+</body>
+
+</html>

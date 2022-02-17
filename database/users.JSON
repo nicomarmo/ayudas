@@ -1,0 +1,42 @@
+[
+ {
+  "id": 1,
+  "nombre": "Nicolas Marmo",
+  "edad": "21",
+  "email": "marmonicolas10@gmail.com",
+  "password": "$2a$10$byk4LpsI0FKCbna6QYS94u8fPKZD0YpRDk9EuoEMCHKwsyhK2KJru",
+  "avatar": "fotoPerfil-1640879978962.jpg"
+ },
+ {
+  "id": 2,
+  "nombre": "karina rios",
+  "edad": "50",
+  "email": "karinafrios@hotmail.com",
+  "password": "$2a$10$6qoE2lQIn0Tl76SIcm8zi.4ISGwygClmdU.DE5r5VxMVbkpc9faii",
+  "avatar": "fotoPerfil-1641013499045.jpg"
+ },
+ {
+  "id": 3,
+  "nombre": "fabian marmo",
+  "edad": "54",
+  "email": "fabianmarmo@gmail.com",
+  "password": "$2a$10$rv0JC2kYQ1R8CpqluB22/.N92iCw8RrIwnWvP4whzCWkwU8yFwPzO",
+  "avatar": "fotoPerfil-1641013678108.jpg"
+ },
+ {
+  "id": 4,
+  "nombre": "Marianela Santos",
+  "edad": "19",
+  "email": "marianelasantosss@gmail.com",
+  "password": "$2a$10$VJ/v2rSZNhM45pm.G.sY.Oev2qfTsGE4u9dNhy0DcKgqs89Nn4fT6",
+  "avatar": "fotoPerfil-1641308884467.jpg"
+ },
+ {
+  "id": 5,
+  "nombre": "Fernando Nogueira Pinto",
+  "edad": "27",
+  "email": "fernogue@gmail.com",
+  "password": "$2a$10$cDGOn0IS0eD2CieiGrXm4.3HXq.OFE1Q/UOUk1yhoivAhOI7k6/T6",
+  "avatar": "fotoPerfil-1641343523911.jpg"
+ }
+]

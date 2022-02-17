@@ -1,0 +1,17 @@
+<html>
+    <h1><%= canciones.nombre %></h1>
+    <ul>
+        <li>
+            Artista: <%=canciones.compositor%>
+        </li>
+        <li>
+            Genero: <%=canciones.generos.nombre%>
+        </li>
+        <a href="/canciones/editar/<%=canciones.id%>">
+            <button>Editar</button>
+        </a>
+        <form action="/canciones/borrar/<%=canciones.id%>" method="post">
+             <button type="submit">Borrar</button>
+        </form>
+    </ul>
+</html>
