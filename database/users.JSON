@@ -38,5 +38,13 @@
   "email": "fernogue@gmail.com",
   "password": "$2a$10$cDGOn0IS0eD2CieiGrXm4.3HXq.OFE1Q/UOUk1yhoivAhOI7k6/T6",
   "avatar": "fotoPerfil-1641343523911.jpg"
+ },
+ {
+  "id": 6,
+  "nombre": "Sofia Dainota",
+  "edad": "20",
+  "email": "ridicula@loca.com.us",
+  "password": "$2a$10$cXq/aymvgy9oBgqBxPOn9ekTNcgpnzqTjNKx4klnNDkA58L2lS0BK",
+  "avatar": "fotoPerfil-1645829427731.jpg"
  }
 ]

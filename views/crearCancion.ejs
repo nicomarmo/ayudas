@@ -8,18 +8,24 @@
 </head>
 <body>
         <h1>Crear Canción</h1>
-    <form action="/canciones/crear" method="post">
+
+        <div class="errores">
+            <ul>
+
+            </ul>
+        </div>
+    <form action="/canciones/crear" method="post" class="formulario">
         <div>
             <label for="">Titulo</label>
-            <input type="text" name="titulo">
+            <input type="text" name="titulo" class="titulo">
         </div>
         <div>
             <label for="">Compositor</label>
-            <input type="text" name="compositor">
+            <input type="text" name="compositor" class="compositor">
         </div>
         <div>
             <label for="">Genero</label>
-            <select name="genero">
+            <select name="genero" class="genero">
                 <% for (let i = 0; i < generos.length; i++ ) { %>
                 <option value="<%=generos[i].id%>">
                     <%=generos[i].nombre%>
@@ -29,4 +35,5 @@
         </div>
         <button type="submit">Crear</button>
     </form>
+    <script src="/js/js-front.js"></script>
 </html>

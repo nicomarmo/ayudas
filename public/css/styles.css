@@ -18,3 +18,13 @@ img{
 .impar{
     border: yellow 1px solid
 }
+
+
+.tituloDestacado{ 
+    color: crimson;
+    font-size: 50px;
+    border: solid 1px blue;
+    
+}
+
+ 

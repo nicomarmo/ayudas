@@ -11,10 +11,16 @@
 
 <body>
     <%- include('partials/header.ejs') %>
-    <h2>omg messi con la camiseta de chaca hi!! :3 </h2>
-    <img src="/img/messi chaca.jpg" alt="messi casaca chaca">
+    <h2 class="titulo">omg messi con la camiseta de chaca hi!! :3 </h2>
+    
+    <h3><a href="#home" class="homeButton">HOME</a></h3>
+    <h3><a href="#prueba1" class="prueba1 botones">prueba1</a></h3>
+    <h3><a href="#prueba2" class="prueba2 botones">prueba2</a></h3>
+    <h3><a href="#prueba3" class="prueba3 botones">prueba3</a></h3>
+    
+    <img class= "messiPic" src="/img/messi chaca.jpg" alt="messi casaca chaca">
     <p>hobbies</p>
-    <% for(let i=0; i < 5; i++) { %>
+    <% for(let i=0; i < 3; i++) { %>
         <label for="">hobbie <%= i+1 %> </label>
         <% if(i % 2==0) {%>
             <input class="par" type="text" name='hobbies[]'> <br>
@@ -22,6 +28,8 @@
                 <input class="impar" type="text" name='hobbies[]'> <br>
                 <% } %>
                     <% } %>
+
+ <script src="/js/js-front.js"></script>
 
 
 </body>
