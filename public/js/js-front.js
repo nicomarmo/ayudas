@@ -76,4 +76,5 @@ window.addEventListener("load", function(){
     });
 })
 
+//meti la pata? 
 
