@@ -16,4 +16,8 @@ router.get('/mostrarNumeroSession', function(req,res){
     res.send('session tiene el numero: ' + req.session.numeroVisitas);
 })
 
+
+router.get('/gifs', mainController.gifs);
+router.get('/gatitos', mainController.gatitos);
+
 module.exports = router; 

@@ -76,5 +76,16 @@ window.addEventListener("load", function(){
     });
 })
 
-//meti la pata? 
-
+window.addEventListener("load", function(){ 
+    if(sessionStorage.getItem("nombreUsuario") == null){
+        let nombre = prompt("cual es tu nombre?");
+        document.querySelector(".bienvenida").innerHTML = "Hola " + nombre
+        sessionStorage.setItem("nombreUsuario", nombre)
+    } else {
+        let nombre = sessionStorage.getItem("nombreUsuario")
+        document.querySelector(".bienvenida").innerHTML = "Hola " + nombre
+//sessionStorage se borra cuando salgo del navegador
+//localStorage se guarda para siempre, solo texto 
+    }
+    
+});
