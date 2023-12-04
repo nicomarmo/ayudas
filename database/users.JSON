@@ -9,25 +9,25 @@
  },
  {
   "id": 2,
-  "nombre": "karina rios",
+  "nombre": "leandro paredes",
   "edad": "50",
-  "email": "karinafrios@hotmail.com",
+  "email": "paredes@hotmail.com",
   "password": "$2a$10$6qoE2lQIn0Tl76SIcm8zi.4ISGwygClmdU.DE5r5VxMVbkpc9faii",
   "avatar": "fotoPerfil-1641013499045.jpg"
  },
  {
   "id": 3,
-  "nombre": "fabian marmo",
+  "nombre": "Fideo Di Maria",
   "edad": "54",
-  "email": "fabianmarmo@gmail.com",
+  "email": "fideo@gmail.com",
   "password": "$2a$10$rv0JC2kYQ1R8CpqluB22/.N92iCw8RrIwnWvP4whzCWkwU8yFwPzO",
   "avatar": "fotoPerfil-1641013678108.jpg"
  },
  {
   "id": 4,
-  "nombre": "Marianela Santos",
+  "nombre": "Carlos Tevez",
   "edad": "19",
-  "email": "marianelasantosss@gmail.com",
+  "email": "carlostevez@gmail.com",
   "password": "$2a$10$VJ/v2rSZNhM45pm.G.sY.Oev2qfTsGE4u9dNhy0DcKgqs89Nn4fT6",
   "avatar": "fotoPerfil-1641308884467.jpg"
  },
